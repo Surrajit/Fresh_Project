@@ -1,3 +1,4 @@
+
 import os
 import sys
 from src.exception import CustomException
@@ -12,7 +13,6 @@ from src.component.data_transformation import DataTransformationConfig
 
 from src.component.model_trainer import ModelTrainerConfig
 from src.component.model_trainer import ModelTrainer
-
 @dataclass
 class DataIngestionConfig:
     train_data_path: str=os.path.join('artifacts',"train.csv")
